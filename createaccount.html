@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create Account</title>
+        <link rel="stylesheet" href="styles/project_master.css" />
+    </head>
+    <body>
+        <main>
+            <h2> Create Account </h2>
+                <form id="create" name="create" method="post" novalidate>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="Enter your first name here" value="" required />
+                         <span class="error">Please enter your First name</span>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="Enter your last name here" value="" required />
+                        <span class="error">Please enter your Last name</span>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="someone@something.com" value="" required />
+                        <span class="error">Please enter a correct email</span>
+                        <span class="error">Email already in use</span>
+                    </div>
+
+                    <div>
+                        <label for="university">University/School</label>
+                        <input type="text" name="university" id="university" placeholder="Enter your current University/Schools name here" value="" required />
+                        <span class="error">Please enter your current university/school name</span>
+                    </div>
+                    <div>
+                        <label for="major">Major</label>
+                        <input type="text" name="major" id="major" placeholder="Enter your major here" value="" required />
+                        <span class="error">Please enter a major</span>
+                    </div>
+
+                    <div>
+                        <label for="start_date">Date of Starting School</label>
+                        <input type="date" name="date_start" id="date_start" placeholder="Enter your date of beginning university/school here" value="" required />
+                        <span class="error">Please enter a date of starting school</span>
+                    </div>
+
+                    <div> 
+                        <label for="date_graduation">Date of Graduation/Expected Date of Graduation</label>
+                        <input type="date" name="date_end" id="date_end" placeholder="Enter your date of  ending university/school here" value="" required />
+                        <span class="error">Please enter a date of graduation or expected for graduation</span>
+                    </div>
+
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username here" value="" required />
+                        <span class="error">Enter your username here</span>
+                        <span class="error">Username already taken</span>
+                    </div>
+                    <!-- Password input -->
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password here" value="" required />
+                        <span class="error">Please enter a password</span>
+                    </div>
+ 
+                    <!-- Re-entering Password -->
+                    <div>
+                    <label for="passwordre">Re-enter Password</label>
+                    <input type="password" name="passwordre" id="passwordre" placeholder="Re-enter password here" value="" required />
+                    <span class="error">Passwords do not match!</span>
+                    </div>
+
+
+
+                    <!-- Confirming Terms and Conditions -->
+                    <div id="checkbox">
+                    <input type="checkbox" name="agree" id="agree" value="Y" required />
+                    <label for="agree">I have read and accepted the <a href="termsandconditions.html">Terms and Conditions</a>
+                    </label>
+                    <span class="error">You must agree to the terms</span>
+                    </div>
+
+                    <div id="buttons">    
+                    <button type="submit" name="submit">Create Account</button>
+                    </div>
+                    </form>
+        </main>
+    </body>
+</html>
