@@ -43,14 +43,14 @@ if(isset($_POST['submit']))
                 <p>The top 10 universities according to students based on their ranking are:</p>
                 <ul>
                     <?php foreach($unirank as $unis): ?>
-                    <li><?php echo "$unis['name'] $unis['Location'] $unis['rank']";?> <a href=<?php $unis['maps']?>>See <?= $unis['name']?> on google maps</a><li>
+                    <li><?php echo ?> <a href = "<?php $unis['name']?>.php"><?=$unis['name']?></a><?= "Location:$unis['Location'] "; ?> <a href=<?php $unis['maps']?>>See on google maps</a> <?php echo "Rank: $unis['rank']";?><li>
                     <?php endforeach; ?>
                 </ul>
 
             </div>
             <form name="universityoption" method ="post" action="">
             <select name="uni" id="uni">
-                <option value="0"> Select a university</option>
+                <option value=""> Select a university</option>
                 <?php 
                 foreach($getuni as $uni):?>
                 <option value = <?php $uni['code'] ?>> <?= $uni['name']; ?> </option>
