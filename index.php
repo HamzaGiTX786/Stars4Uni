@@ -43,7 +43,7 @@ if(isset($_POST['submit']))
                 <p>The top 10 universities according to students based on their ranking are:</p>
                 <ul>
                     <?php foreach($unirank as $unis): ?>
-                    <li><?php echo ?> <a href = "<?php $unis['name']?>.php"><?=$unis['name']?></a><?= "Location:$unis['Location'] "; ?> <a href=<?php $unis['maps']?>>See on google maps</a> <?php echo "Rank: $unis['rank']";?><li>
+                    <li><a href = "<?php $unis['name']?>.php"><?=$unis['name']?></a><?= "Location:$unis['Location'] "; ?> <a href=<?php $unis['maps']?>>See on google maps</a> <?php echo "Rank: $unis['rank']";?><li>
                     <?php endforeach; ?>
                 </ul>
 
