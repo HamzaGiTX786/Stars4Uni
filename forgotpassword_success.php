@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Forgot Password&colon; UniInfo</title>
-        <link rel="stylesheet" href="styles/project_master.css">
+        <title>Stars4Uni&colon; Forgot Password</title>
+        <link rel="stylesheet" href="styles/master.css">
     </head>
     <body>
        <?php include "includes/header.php";?>
