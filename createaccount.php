@@ -110,8 +110,8 @@ if (isset($_POST['submit']))
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Create Account&colon; UniInfo</title>
-        <link rel="stylesheet" href="styles/project_master.css" />
+        <title>Stars4Uni&colon; Create an Account</title>
+        <link rel="stylesheet" href="styles/master.css" />
     </head>
     <body>
         <main>
@@ -176,8 +176,6 @@ if (isset($_POST['submit']))
                     <input type="password" name="passwordre" id="passwordre" placeholder="Re-enter password here" value="" required />
                     <span class="error <?=!isset($errors['passowrdre']) ? 'hidden' : "";?>">Passwords do not match!</span>
                     </div>
-
-
 
                     <!-- Confirming Terms and Conditions -->
                     <div id="checkbox">
