@@ -57,7 +57,7 @@ if (isset($_POST['submit']))
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login&colon; UniInfo </title>
+        <title>Stars4Uni&colon; Login </title>
         <link rel="stylesheet" href="styles/website_master.css" />
     </head>
     <body>
