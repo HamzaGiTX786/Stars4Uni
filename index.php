@@ -24,8 +24,6 @@ if(isset($_POST['submit']))
 
     }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +31,7 @@ if(isset($_POST['submit']))
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login&colon; UniInfo </title>
+        <title>Stars4Uni&colon; Home </title>
         <link rel="stylesheet" href="styles/website_master.css" />
     </head>
     <body>
@@ -48,6 +46,7 @@ if(isset($_POST['submit']))
                 </ul>
 
             </div>
+            <div>
             <form name="universityoption" method ="post" action="">
             <select name="uni" id="uni">
                 <option value=""> Select a university</option>
@@ -56,6 +55,8 @@ if(isset($_POST['submit']))
                 <option value = <?php $uni['code'] ?>> <?= $uni['name']; ?> </option>
                 <?php endforeach ?>
             </select>
+            </form>
+                </div>
         </main>
     </body>
 </html>
